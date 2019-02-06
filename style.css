@@ -31,8 +31,8 @@ h3 {
   font-family: 'Staatliches', cursive;
   font-size: 18px;
   line-height: 20px;
-  text-align: center;
-  margin: -25px;
+  text-align: left;
+  margin: 20px;
 }
 
 p {
@@ -52,9 +52,31 @@ i {
   font-size: 30px;
 }
 
+#sidebar {
+  position: fixed;
+  width: 75px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: black;
+  margin: 11px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 242px;
+}
+
+#page-content {
+  margin-left: 75px;
+}
+
 .container {
-  width: 460px;   /* This sets the width */
+  width: auto;   /* This sets the width */
   margin: 0 auto; /* This automatically sets left/right margins */
+}
+
+.large {
+  height: 706px;
 }
 
 .card {
@@ -82,6 +104,12 @@ i {
 
 .list-inline {
   padding-left: 0px;
+}
+
+.list-inline-sidebar {
+  list-style-type: none;
+  padding-left: 0px;
+  text-align: center;
 }
 
 @media (max-width: 960px) {

@@ -11,8 +11,15 @@
 
 
 <body>
-  <div class="container">
-    <div class="card text-center">
+  <div id="sidebar">
+    <ul class = "list-inline-sidebar">
+      <li><a href="#profile"><i class="fas fa-user"></i></a></li>
+      <li><a href="#movies"><i class="fas fa-film"></i></a></li>
+      <li><a href="#about"><i class="fas fa-info-circle"></i></a></li>
+    </ul>
+  </div>
+  <div id="page-content" class="container">
+    <a id="profile"><div class="card text-center large"></a>
       <img class="img-circle" src="images/profile.jpg" alt="Pedro's Profile Image">
       <h1>Pedro Agostinho</h1>
       <h2>Fullstack Web Developer</h2>
@@ -27,13 +34,13 @@
       </ul>
     </div>
 
-    <div class="card">
+    <a id="movies"><div class="card large"></a>
       <h2>Favorite Movies</h2>
       <table>
         <tbody>
           <tr>
             <td>
-              <img src="images/image1.png" alt="Pulp Fiction">
+              <a href="https://www.imdb.com/title/tt0110912/?ref_=nv_sr_1"><img src="images/image1.png" alt="Pulp Fiction"></a>
             </td>
             <td>
               <h3>Pulp Fiction</h3>
@@ -42,7 +49,7 @@
           </tr>
           <tr>
             <td>
-              <img src="images/image2.png" alt="Lucky Number Slevin">
+              <a href="https://www.imdb.com/title/tt0425210/?ref_=nv_sr_1""><img src="images/image2.png" alt="Lucky Number Slevin"></a>
             </td>
             <td>
               <h3>Lucky Number Slevin</h3>
@@ -51,7 +58,7 @@
           </tr>
           <tr>
             <td>
-              <img src="images/image3.png" alt="Deadpool">
+              <a href="https://www.imdb.com/title/tt1431045/?ref_=fn_al_tt_1"><img src="images/image3.png" alt="Deadpool"></a>
             </td>
             <td>
               <h3>Deadpool</h3>
@@ -62,7 +69,7 @@
       </table>
     </div>
 
-    <div class="card text-center">
+    <a id="about"><div class="card text-center"></a>
       <h2>About this page</h2>
       <p>This page has been coded during the <a href="https://www.lewagon.com/">FullStack program @LeWagon</a>. That was probably the best experience of my entire life.</p>
       <ul class="list-inline">
